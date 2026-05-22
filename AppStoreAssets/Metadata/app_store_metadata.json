@@ -1,0 +1,43 @@
+{
+  "name": "SOPForge AI",
+  "subtitle": "AI SOPs, checklists and training",
+  "bundleId": "com.sopforge.ai",
+  "sku": "SOPFORGE-AI-IOS-001",
+  "primaryCategory": "Business",
+  "secondaryCategory": "Productivity",
+  "promotionalText": "Turn messy team processes into clear SOPs, safety checklists, and staff training guides with an offline-friendly operations documentation workspace.",
+  "description": "SOPForge AI helps small businesses, trades, operations teams, agencies, and field-service companies create clear operating documents without starting from a blank page.\n\nUse it to draft standard operating procedures, opening and closing checklists, inspection workflows, safety procedures, onboarding documents, and staff training guides. Capture rough notes, use Voice-to-SOP to dictate a process, edit the output, save documents locally, and export professional PDFs for review or sharing.\n\nBuilt for contractors, cleaning companies, landscaping teams, logistics teams, agencies, property managers, hospitality businesses, and small business owners who want consistent workflows and fewer repeated explanations.\n\nKey features:\n- Generate SOPs from process notes\n- Create opening, closing, inspection, cleaning, maintenance, safety, and onboarding checklists\n- Convert dictated notes into clean SOP drafts\n- Build beginner-friendly staff training guides\n- Save documents offline with local storage\n- Edit and duplicate saved documents\n- Export professional PDFs with version, date, checklist, signature area, and disclaimer\n- Review AI-generated documents before use\n\nSOPForge AI is designed for operational documentation and quality-control workflows. AI-generated documents must be reviewed before use and are not legal advice, regulatory certification, or a replacement for qualified professionals.",
+  "keywords": [
+    "SOP",
+    "checklist",
+    "training",
+    "operations",
+    "workflow",
+    "safety",
+    "PDF",
+    "business",
+    "contractor",
+    "cleaning",
+    "field service"
+  ],
+  "supportUrl": "https://github.com/lanray07/SOPForge-AI/issues",
+  "marketingUrl": "https://github.com/lanray07/SOPForge-AI",
+  "privacyPolicyUrl": "https://github.com/lanray07/SOPForge-AI/blob/main/AppStoreAssets/Metadata/privacy_policy.md",
+  "subscriptions": [
+    {
+      "name": "Pro Monthly",
+      "productId": "com.sopforgeai.pro.monthly",
+      "pricePlaceholder": "GBP 14.99/month"
+    },
+    {
+      "name": "Pro Yearly",
+      "productId": "com.sopforgeai.pro.yearly",
+      "pricePlaceholder": "GBP 119.99/year"
+    },
+    {
+      "name": "Business Monthly",
+      "productId": "com.sopforgeai.business.monthly",
+      "pricePlaceholder": "GBP 59.99/month"
+    }
+  ]
+}
