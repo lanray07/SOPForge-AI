@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* ChecklistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* ChecklistRow.swift */; };
+		B00000000000000000000002 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* DisclaimerView.swift */; };
+		B00000000000000000000003 /* DocumentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* DocumentCard.swift */; };
+		B00000000000000000000004 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* EmptyStateView.swift */; };
+		B00000000000000000000005 /* PDFPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* PDFPreviewView.swift */; };
+		B00000000000000000000006 /* TemplateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* TemplateCard.swift */; };
+		B00000000000000000000007 /* UpgradeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* UpgradeBanner.swift */; };
+		B00000000000000000000008 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* AppState.swift */; };
+		B00000000000000000000009 /* BusinessProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* BusinessProfile.swift */; };
+		B0000000000000000000000A /* ChecklistDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000A /* ChecklistDocument.swift */; };
+		B0000000000000000000000B /* DocumentEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000B /* DocumentEnums.swift */; };
+		B0000000000000000000000C /* SOPDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000C /* SOPDocument.swift */; };
+		B0000000000000000000000D /* SubscriptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000D /* SubscriptionState.swift */; };
+		B0000000000000000000000E /* TrainingGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000E /* TrainingGuide.swift */; };
+		B0000000000000000000000F /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000F /* AIService.swift */; };
+		B00000000000000000000010 /* AIServiceEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000010 /* AIServiceEnvironment.swift */; };
+		B00000000000000000000011 /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* MockAIService.swift */; };
+		B00000000000000000000012 /* RemoteAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000012 /* RemoteAIService.swift */; };
+		B00000000000000000000013 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000013 /* SpeechRecognizer.swift */; };
+		B00000000000000000000014 /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000014 /* SubscriptionStore.swift */; };
+		B00000000000000000000015 /* SOPForgeAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000015 /* SOPForgeAIApp.swift */; };
+		B00000000000000000000016 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000016 /* AppConfiguration.swift */; };
+		B00000000000000000000017 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000017 /* DesignSystem.swift */; };
+		B00000000000000000000018 /* PDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000018 /* PDFExporter.swift */; };
+		B00000000000000000000019 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000019 /* ShareSheet.swift */; };
+		B0000000000000000000001A /* ChecklistBuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001A /* ChecklistBuilderViewModel.swift */; };
+		B0000000000000000000001B /* DocumentLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001B /* DocumentLibraryViewModel.swift */; };
+		B0000000000000000000001C /* SOPGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001C /* SOPGeneratorViewModel.swift */; };
+		B0000000000000000000001D /* TrainingGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001D /* TrainingGuideViewModel.swift */; };
+		B0000000000000000000001E /* VoiceToSOPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001E /* VoiceToSOPViewModel.swift */; };
+		B0000000000000000000001F /* CreateHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001F /* CreateHubView.swift */; };
+		B00000000000000000000020 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000020 /* DashboardView.swift */; };
+		B00000000000000000000021 /* ChecklistBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000021 /* ChecklistBuilderView.swift */; };
+		B00000000000000000000022 /* SOPGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000022 /* SOPGeneratorView.swift */; };
+		B00000000000000000000023 /* TrainingGuideGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000023 /* TrainingGuideGeneratorView.swift */; };
+		B00000000000000000000024 /* VoiceToSOPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000024 /* VoiceToSOPView.swift */; };
+		B00000000000000000000025 /* ChecklistDocumentEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000025 /* ChecklistDocumentEditorView.swift */; };
+		B00000000000000000000026 /* DocumentLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000026 /* DocumentLibraryView.swift */; };
+		B00000000000000000000027 /* SOPDocumentEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000027 /* SOPDocumentEditorView.swift */; };
+		B00000000000000000000028 /* TrainingGuideEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000028 /* TrainingGuideEditorView.swift */; };
+		B00000000000000000000029 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000029 /* MainTabView.swift */; };
+		B0000000000000000000002A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000002A /* OnboardingView.swift */; };
+		B0000000000000000000002B /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000002B /* PaywallView.swift */; };
+		B0000000000000000000002C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000002C /* RootView.swift */; };
+		B00000000000000000000101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000101 /* Assets.xcassets */; };
+		B00000000000000000000102 /* SOPForgeProducts.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000102 /* SOPForgeProducts.storekit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000005 /* SOPForgeAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPForgeAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000001 /* ChecklistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistRow.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* DocumentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCard.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* PDFPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewView.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* TemplateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCard.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* UpgradeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeBanner.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* BusinessProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfile.swift; sourceTree = "<group>"; };
+		F0000000000000000000000A /* ChecklistDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistDocument.swift; sourceTree = "<group>"; };
+		F0000000000000000000000B /* DocumentEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentEnums.swift; sourceTree = "<group>"; };
+		F0000000000000000000000C /* SOPDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPDocument.swift; sourceTree = "<group>"; };
+		F0000000000000000000000D /* SubscriptionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionState.swift; sourceTree = "<group>"; };
+		F0000000000000000000000E /* TrainingGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingGuide.swift; sourceTree = "<group>"; };
+		F0000000000000000000000F /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		F00000000000000000000010 /* AIServiceEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIServiceEnvironment.swift; sourceTree = "<group>"; };
+		F00000000000000000000011 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAIService.swift; sourceTree = "<group>"; };
+		F00000000000000000000012 /* RemoteAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAIService.swift; sourceTree = "<group>"; };
+		F00000000000000000000013 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		F00000000000000000000014 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
+		F00000000000000000000015 /* SOPForgeAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPForgeAIApp.swift; sourceTree = "<group>"; };
+		F00000000000000000000016 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		F00000000000000000000017 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		F00000000000000000000018 /* PDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExporter.swift; sourceTree = "<group>"; };
+		F00000000000000000000019 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		F0000000000000000000001A /* ChecklistBuilderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistBuilderViewModel.swift; sourceTree = "<group>"; };
+		F0000000000000000000001B /* DocumentLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentLibraryViewModel.swift; sourceTree = "<group>"; };
+		F0000000000000000000001C /* SOPGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPGeneratorViewModel.swift; sourceTree = "<group>"; };
+		F0000000000000000000001D /* TrainingGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingGuideViewModel.swift; sourceTree = "<group>"; };
+		F0000000000000000000001E /* VoiceToSOPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceToSOPViewModel.swift; sourceTree = "<group>"; };
+		F0000000000000000000001F /* CreateHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHubView.swift; sourceTree = "<group>"; };
+		F00000000000000000000020 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F00000000000000000000021 /* ChecklistBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistBuilderView.swift; sourceTree = "<group>"; };
+		F00000000000000000000022 /* SOPGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPGeneratorView.swift; sourceTree = "<group>"; };
+		F00000000000000000000023 /* TrainingGuideGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingGuideGeneratorView.swift; sourceTree = "<group>"; };
+		F00000000000000000000024 /* VoiceToSOPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceToSOPView.swift; sourceTree = "<group>"; };
+		F00000000000000000000025 /* ChecklistDocumentEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistDocumentEditorView.swift; sourceTree = "<group>"; };
+		F00000000000000000000026 /* DocumentLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentLibraryView.swift; sourceTree = "<group>"; };
+		F00000000000000000000027 /* SOPDocumentEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPDocumentEditorView.swift; sourceTree = "<group>"; };
+		F00000000000000000000028 /* TrainingGuideEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingGuideEditorView.swift; sourceTree = "<group>"; };
+		F00000000000000000000029 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F0000000000000000000002A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F0000000000000000000002B /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		F0000000000000000000002C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F00000000000000000000101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F00000000000000000000102 /* SOPForgeProducts.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = SOPForgeProducts.storekit; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000001 /* SOPForgeAI */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* SOPForgeAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000001 /* SOPForgeAI */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000015 /* SOPForgeAIApp.swift */,
+				A00000000000000000000002 /* Components */,
+				A00000000000000000000003 /* Models */,
+				A00000000000000000000004 /* Services */,
+				A00000000000000000000005 /* Utilities */,
+				A00000000000000000000006 /* ViewModels */,
+				A00000000000000000000007 /* Views */,
+				A0000000000000000000000D /* Resources */,
+			);
+			path = SOPForgeAI;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000002 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000001 /* ChecklistRow.swift */,
+				F00000000000000000000002 /* DisclaimerView.swift */,
+				F00000000000000000000003 /* DocumentCard.swift */,
+				F00000000000000000000004 /* EmptyStateView.swift */,
+				F00000000000000000000005 /* PDFPreviewView.swift */,
+				F00000000000000000000006 /* TemplateCard.swift */,
+				F00000000000000000000007 /* UpgradeBanner.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000008 /* AppState.swift */,
+				F00000000000000000000009 /* BusinessProfile.swift */,
+				F0000000000000000000000A /* ChecklistDocument.swift */,
+				F0000000000000000000000B /* DocumentEnums.swift */,
+				F0000000000000000000000C /* SOPDocument.swift */,
+				F0000000000000000000000D /* SubscriptionState.swift */,
+				F0000000000000000000000E /* TrainingGuide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000000F /* AIService.swift */,
+				F00000000000000000000010 /* AIServiceEnvironment.swift */,
+				F00000000000000000000011 /* MockAIService.swift */,
+				F00000000000000000000012 /* RemoteAIService.swift */,
+				F00000000000000000000013 /* SpeechRecognizer.swift */,
+				F00000000000000000000014 /* SubscriptionStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000016 /* AppConfiguration.swift */,
+				F00000000000000000000017 /* DesignSystem.swift */,
+				F00000000000000000000018 /* PDFExporter.swift */,
+				F00000000000000000000019 /* ShareSheet.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000001A /* ChecklistBuilderViewModel.swift */,
+				F0000000000000000000001B /* DocumentLibraryViewModel.swift */,
+				F0000000000000000000001C /* SOPGeneratorViewModel.swift */,
+				F0000000000000000000001D /* TrainingGuideViewModel.swift */,
+				F0000000000000000000001E /* VoiceToSOPViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000029 /* MainTabView.swift */,
+				F0000000000000000000002C /* RootView.swift */,
+				A00000000000000000000008 /* Dashboard */,
+				A00000000000000000000009 /* Generators */,
+				A0000000000000000000000A /* Library */,
+				A0000000000000000000000B /* Onboarding */,
+				A0000000000000000000000C /* Paywall */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000008 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000001F /* CreateHubView.swift */,
+				F00000000000000000000020 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000021 /* ChecklistBuilderView.swift */,
+				F00000000000000000000022 /* SOPGeneratorView.swift */,
+				F00000000000000000000023 /* TrainingGuideGeneratorView.swift */,
+				F00000000000000000000024 /* VoiceToSOPView.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000025 /* ChecklistDocumentEditorView.swift */,
+				F00000000000000000000026 /* DocumentLibraryView.swift */,
+				F00000000000000000000027 /* SOPDocumentEditorView.swift */,
+				F00000000000000000000028 /* TrainingGuideEditorView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000002A /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000C /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000002B /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000101 /* Assets.xcassets */,
+				F00000000000000000000102 /* SOPForgeProducts.storekit */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000004 /* SOPForgeAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXNativeTarget "SOPForgeAI" */;
+			buildPhases = (
+				000000000000000000000006 /* Sources */,
+				000000000000000000000007 /* Frameworks */,
+				000000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOPForgeAI;
+			productName = SOPForgeAI;
+			productReference = 000000000000000000000005 /* SOPForgeAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					000000000000000000000004 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXProject "SOPForgeAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000004 /* SOPForgeAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000101 /* Assets.xcassets in Resources */,
+				B00000000000000000000102 /* SOPForgeProducts.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* ChecklistRow.swift in Sources */,
+				B00000000000000000000002 /* DisclaimerView.swift in Sources */,
+				B00000000000000000000003 /* DocumentCard.swift in Sources */,
+				B00000000000000000000004 /* EmptyStateView.swift in Sources */,
+				B00000000000000000000005 /* PDFPreviewView.swift in Sources */,
+				B00000000000000000000006 /* TemplateCard.swift in Sources */,
+				B00000000000000000000007 /* UpgradeBanner.swift in Sources */,
+				B00000000000000000000008 /* AppState.swift in Sources */,
+				B00000000000000000000009 /* BusinessProfile.swift in Sources */,
+				B0000000000000000000000A /* ChecklistDocument.swift in Sources */,
+				B0000000000000000000000B /* DocumentEnums.swift in Sources */,
+				B0000000000000000000000C /* SOPDocument.swift in Sources */,
+				B0000000000000000000000D /* SubscriptionState.swift in Sources */,
+				B0000000000000000000000E /* TrainingGuide.swift in Sources */,
+				B0000000000000000000000F /* AIService.swift in Sources */,
+				B00000000000000000000010 /* AIServiceEnvironment.swift in Sources */,
+				B00000000000000000000011 /* MockAIService.swift in Sources */,
+				B00000000000000000000012 /* RemoteAIService.swift in Sources */,
+				B00000000000000000000013 /* SpeechRecognizer.swift in Sources */,
+				B00000000000000000000014 /* SubscriptionStore.swift in Sources */,
+				B00000000000000000000015 /* SOPForgeAIApp.swift in Sources */,
+				B00000000000000000000016 /* AppConfiguration.swift in Sources */,
+				B00000000000000000000017 /* DesignSystem.swift in Sources */,
+				B00000000000000000000018 /* PDFExporter.swift in Sources */,
+				B00000000000000000000019 /* ShareSheet.swift in Sources */,
+				B0000000000000000000001A /* ChecklistBuilderViewModel.swift in Sources */,
+				B0000000000000000000001B /* DocumentLibraryViewModel.swift in Sources */,
+				B0000000000000000000001C /* SOPGeneratorViewModel.swift in Sources */,
+				B0000000000000000000001D /* TrainingGuideViewModel.swift in Sources */,
+				B0000000000000000000001E /* VoiceToSOPViewModel.swift in Sources */,
+				B0000000000000000000001F /* CreateHubView.swift in Sources */,
+				B00000000000000000000020 /* DashboardView.swift in Sources */,
+				B00000000000000000000021 /* ChecklistBuilderView.swift in Sources */,
+				B00000000000000000000022 /* SOPGeneratorView.swift in Sources */,
+				B00000000000000000000023 /* TrainingGuideGeneratorView.swift in Sources */,
+				B00000000000000000000024 /* VoiceToSOPView.swift in Sources */,
+				B00000000000000000000025 /* ChecklistDocumentEditorView.swift in Sources */,
+				B00000000000000000000026 /* DocumentLibraryView.swift in Sources */,
+				B00000000000000000000027 /* SOPDocumentEditorView.swift in Sources */,
+				B00000000000000000000028 /* TrainingGuideEditorView.swift in Sources */,
+				B00000000000000000000029 /* MainTabView.swift in Sources */,
+				B0000000000000000000002A /* OnboardingView.swift in Sources */,
+				B0000000000000000000002B /* PaywallView.swift in Sources */,
+				B0000000000000000000002C /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00000000000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SOPForge AI";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SOPForge AI uses microphone access to capture spoken process notes for Voice-to-SOP.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SOPForge AI uses speech recognition to convert dictated process notes into editable SOP drafts.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sopforge.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SOPForge AI";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SOPForge AI uses microphone access to capture spoken process notes for Voice-to-SOP.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SOPForge AI uses speech recognition to convert dictated process notes into editable SOP drafts.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sopforge.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000A /* Build configuration list for PBXProject "SOPForgeAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000B /* Debug */,
+				00000000000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000009 /* Build configuration list for PBXNativeTarget "SOPForgeAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000D /* Debug */,
+				00000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

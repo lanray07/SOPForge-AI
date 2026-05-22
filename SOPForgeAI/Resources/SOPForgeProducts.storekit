@@ -1,0 +1,95 @@
+{
+  "identifier" : "E5B60927-0DB4-4894-9E86-D6D1D2539F3C",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "SOPFORGEAI",
+    "_developerTeamID" : "TEAMID",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 769244400,
+    "_locale" : "en_GB",
+    "_storefront" : "GBR",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "SOPForge AI Plans",
+      "localizations" : [
+        {
+          "description" : "SOPForge AI subscription plans",
+          "displayName" : "SOPForge AI",
+          "locale" : "en_GB"
+        }
+      ],
+      "subscriptions" : [
+        {
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "pro-monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited SOPForge AI documents and PDF exports",
+              "displayName" : "Pro Monthly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.sopforgeai.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "SOPForge AI Plans",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "displayPrice" : "119.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "pro-yearly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Annual SOPForge AI Pro subscription",
+              "displayName" : "Pro Yearly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.sopforgeai.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "SOPForge AI Plans",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "displayPrice" : "59.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "business-monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Business plan with branding and workflow placeholders",
+              "displayName" : "Business Monthly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.sopforgeai.business.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Business Monthly",
+          "subscriptionGroupID" : "SOPForge AI Plans",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
