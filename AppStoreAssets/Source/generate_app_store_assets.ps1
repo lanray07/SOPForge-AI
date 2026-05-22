@@ -135,7 +135,7 @@ function Draw-iPadFrame($g, [float]$x, [float]$y, [float]$w, [float]$h, [hashtab
 }
 
 function New-Screenshot([string]$path, [int]$width, [int]$height, [string]$headline, [string]$subhead, [hashtable]$screen, [bool]$iPad) {
-    $bmp = New-Object System.Drawing.Bitmap $width, $height
+    $bmp = New-Object System.Drawing.Bitmap -ArgumentList @($width, $height, ([System.Drawing.Imaging.PixelFormat]::Format24bppRgb))
     $g = [System.Drawing.Graphics]::FromImage($bmp)
     $g.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
     $g.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
@@ -164,7 +164,7 @@ function New-Screenshot([string]$path, [int]$width, [int]$height, [string]$headl
 function New-SubscriptionReviewScreenshot([string]$path, [string]$planName, [string]$price, [string]$period, [string[]]$features, [string]$accentHex) {
     $width = 1242
     $height = 2688
-    $bmp = New-Object System.Drawing.Bitmap $width, $height
+    $bmp = New-Object System.Drawing.Bitmap -ArgumentList @($width, $height, ([System.Drawing.Imaging.PixelFormat]::Format24bppRgb))
     $g = [System.Drawing.Graphics]::FromImage($bmp)
     $g.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
     $g.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
@@ -222,7 +222,7 @@ function New-SubscriptionReviewScreenshot([string]$path, [string]$planName, [str
 
 function New-SubscriptionPromoImage([string]$path, [string]$accentHex, [string]$secondaryHex, [string]$symbol) {
     $size = 1024
-    $bmp = New-Object System.Drawing.Bitmap $size, $size
+    $bmp = New-Object System.Drawing.Bitmap -ArgumentList @($size, $size, ([System.Drawing.Imaging.PixelFormat]::Format24bppRgb))
     $g = [System.Drawing.Graphics]::FromImage($bmp)
     $g.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
     $g.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
