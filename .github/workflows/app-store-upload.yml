@@ -30,7 +30,7 @@ jobs:
       BUNDLE_ID: com.sopforge.ai
       ARCHIVE_PATH: build/SOPForgeAI.xcarchive
       EXPORT_PATH: build/export
-      API_KEY_PATH: build/AuthKey.p8
+      API_KEY_PATH: ${{ github.workspace }}/build/AuthKey.p8
       APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       ASC_KEY_ID: ${{ secrets.ASC_KEY_ID || secrets.APP_STORE_CONNECT_API_KEY_ID }}
       ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID || secrets.APP_STORE_CONNECT_ISSUER_ID }}
