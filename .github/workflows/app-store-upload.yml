@@ -1,6 +1,9 @@
 name: Upload Build to App Store Connect
 
 on:
+  push:
+    tags:
+      - "app-store-v*"
   workflow_dispatch:
     inputs:
       marketing_version:
@@ -28,6 +31,8 @@ jobs:
       ARCHIVE_PATH: build/SOPForgeAI.xcarchive
       EXPORT_PATH: build/export
       API_KEY_PATH: build/AuthKey_${{ secrets.ASC_KEY_ID }}.p8
+      MARKETING_VERSION: ${{ github.event.inputs.marketing_version || '1.0' }}
+      BUILD_NUMBER: ${{ github.event.inputs.build_number || '1' }}
 
     steps:
       - name: Checkout
@@ -64,8 +69,8 @@ jobs:
             -authenticationKeyIssuerID "${{ secrets.ASC_ISSUER_ID }}" \
             DEVELOPMENT_TEAM="${{ secrets.APPLE_TEAM_ID }}" \
             PRODUCT_BUNDLE_IDENTIFIER="$BUNDLE_ID" \
-            MARKETING_VERSION="${{ inputs.marketing_version }}" \
-            CURRENT_PROJECT_VERSION="${{ inputs.build_number }}"
+            MARKETING_VERSION="$MARKETING_VERSION" \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
 
       - name: Create export options
         run: |
