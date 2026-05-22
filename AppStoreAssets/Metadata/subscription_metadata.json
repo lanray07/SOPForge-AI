@@ -1,0 +1,39 @@
+{
+  "subscriptionGroup": {
+    "referenceName": "SOPForge AI Plans",
+    "displayName": "SOPForge AI",
+    "description": "SOP, checklist, PDF export, voice, and training document generation plans."
+  },
+  "products": [
+    {
+      "referenceName": "Pro Monthly",
+      "productId": "com.sopforgeai.pro.monthly",
+      "duration": "P1M",
+      "pricePlaceholder": "GBP 14.99",
+      "displayName": "Pro Monthly",
+      "description": "Unlimited SOPs and PDF exports",
+      "reviewScreenshot": "Subscriptions/ReviewScreenshots/pro_monthly_review.png",
+      "promotionalImage": "Subscriptions/PromotionalImages/pro_monthly_promo.png"
+    },
+    {
+      "referenceName": "Pro Yearly",
+      "productId": "com.sopforgeai.pro.yearly",
+      "duration": "P1Y",
+      "pricePlaceholder": "GBP 119.99",
+      "displayName": "Pro Yearly",
+      "description": "Annual Pro document generation",
+      "reviewScreenshot": "Subscriptions/ReviewScreenshots/pro_yearly_review.png",
+      "promotionalImage": "Subscriptions/PromotionalImages/pro_yearly_promo.png"
+    },
+    {
+      "referenceName": "Business Monthly",
+      "productId": "com.sopforgeai.business.monthly",
+      "duration": "P1M",
+      "pricePlaceholder": "GBP 59.99",
+      "displayName": "Business Monthly",
+      "description": "Branding and team workflow tools",
+      "reviewScreenshot": "Subscriptions/ReviewScreenshots/business_monthly_review.png",
+      "promotionalImage": "Subscriptions/PromotionalImages/business_monthly_promo.png"
+    }
+  ]
+}
