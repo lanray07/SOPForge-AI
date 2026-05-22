@@ -14,17 +14,17 @@ Your Apple Developer Team ID.
 
 Find it in Apple Developer > Membership details.
 
-### ASC_KEY_ID
+### ASC_KEY_ID or APP_STORE_CONNECT_API_KEY_ID
 
 The App Store Connect API key ID.
 
-### ASC_ISSUER_ID
+### ASC_ISSUER_ID or APP_STORE_CONNECT_ISSUER_ID
 
 The App Store Connect API issuer ID.
 
-### ASC_PRIVATE_KEY_BASE64
+### ASC_PRIVATE_KEY_BASE64 or APP_STORE_CONNECT_API_PRIVATE_KEY
 
-The `.p8` private key encoded as base64.
+The `.p8` private key encoded as base64, or the raw `.p8` private key content.
 
 PowerShell:
 
@@ -39,6 +39,8 @@ base64 -i AuthKey_XXXXXXXXXX.p8 | pbcopy
 ```
 
 Paste the output into the GitHub secret value.
+
+If you use the raw `.p8` content instead, paste it into `APP_STORE_CONNECT_API_PRIVATE_KEY`. Multiline private keys and keys containing escaped `\n` line breaks are both supported by the workflow.
 
 ## App Store Connect API Key
 
