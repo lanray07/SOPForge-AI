@@ -21,7 +21,7 @@ permissions:
 jobs:
   archive-and-upload:
     name: Archive and Upload
-    runs-on: macos-15
+    runs-on: macos-26
 
     env:
       PROJECT_PATH: SOPForgeAI.xcodeproj

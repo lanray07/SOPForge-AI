@@ -15,7 +15,7 @@ permissions:
 jobs:
   build-ios:
     name: Build SOPForge AI
-    runs-on: macos-15
+    runs-on: macos-26
 
     steps:
       - name: Checkout
