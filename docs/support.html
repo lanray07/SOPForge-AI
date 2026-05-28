@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOPForge AI Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #3158f4;
+      --purple: #7a4ce0;
+      --ink: #15171c;
+      --muted: #5d6575;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --line: #dfe3ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f5f7fb;
+        --muted: #b8c0cf;
+        --bg: #0d1117;
+        --card: #151b23;
+        --line: #303947;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    header {
+      margin-bottom: 28px;
+    }
+    .mark {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+      letter-spacing: .02em;
+      background: linear-gradient(135deg, var(--accent), var(--purple));
+      margin-bottom: 18px;
+    }
+    h1, h2 {
+      line-height: 1.15;
+      margin: 0 0 12px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    section, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      font-weight: 650;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark">SF</div>
+      <h1>SOPForge AI Support</h1>
+      <p>Help for SOPForge AI, the iOS app for creating SOPs, checklists, training guides, and operations documents.</p>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Get Support</h2>
+        <p>For app help, bug reports, billing questions, or privacy questions, contact the support team.</p>
+        <p>Email: <a href="mailto:boboyen@email.com">boboyen@email.com</a></p>
+        <p>GitHub support requests: <a href="https://github.com/lanray07/SOPForge-AI/issues">SOPForge AI Issues</a></p>
+      </section>
+
+      <section>
+        <h2>Common Questions</h2>
+        <ul>
+          <li>Documents are saved locally on your device for offline access.</li>
+          <li>AI-generated SOPs, checklists, and training guides should be reviewed before use.</li>
+          <li>Voice-to-SOP requires microphone and speech recognition permissions.</li>
+          <li>PDF exports can be shared with the native iOS share sheet.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Billing</h2>
+        <p>Subscriptions are handled by Apple through StoreKit. To manage or cancel a subscription, open Settings on your device, tap your Apple Account, then tap Subscriptions.</p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>SOPForge AI is designed to keep saved documents on device. Read the privacy policy for more detail.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      </section>
+    </div>
+
+    <p class="footer">SOPForge AI documents are not legal advice, regulatory certification, engineering certification, medical advice, or a replacement for qualified professionals.</p>
+  </main>
+</body>
+</html>

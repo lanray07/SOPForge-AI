@@ -17,6 +17,7 @@ final class SubscriptionStore {
     var renewsAt: Date?
     var isLoading = false
     var errorMessage: String?
+    var statusMessage: String?
 
     @ObservationIgnored private var updatesTask: Task<Void, Never>?
 
@@ -35,12 +36,17 @@ final class SubscriptionStore {
     func loadProducts() async {
         isLoading = true
         errorMessage = nil
+        statusMessage = nil
         defer { isLoading = false }
 
         do {
             products = try await Product.products(for: productIDs).sorted { $0.price < $1.price }
+            if products.isEmpty {
+                statusMessage = "The free plan is active. Paid plans will appear here when App Store subscriptions finish setup."
+            }
         } catch {
-            errorMessage = "Store products could not be loaded. Check StoreKit configuration or App Store Connect setup."
+            products = []
+            statusMessage = "The free plan is active. Paid plans are temporarily unavailable."
         }
     }
 
@@ -73,6 +79,7 @@ final class SubscriptionStore {
     func purchase(_ product: Product) async {
         isLoading = true
         errorMessage = nil
+        statusMessage = nil
         defer { isLoading = false }
 
         do {
@@ -81,18 +88,20 @@ final class SubscriptionStore {
             case .success(let verification):
                 await handle(verification)
             case .userCancelled, .pending:
+                statusMessage = "No purchase was completed. You can continue using the free plan."
                 break
             @unknown default:
+                statusMessage = "No purchase was completed. You can continue using the free plan."
                 break
             }
         } catch {
-            errorMessage = "Purchase could not be completed. Please try again."
+            statusMessage = "No purchase was completed. You can continue using the free plan."
         }
     }
 
     private func handle(_ result: VerificationResult<Transaction>) async {
         guard case .verified(let transaction) = result else {
-            errorMessage = "The purchase could not be verified."
+            statusMessage = "No purchase was completed. You can continue using the free plan."
             return
         }
 

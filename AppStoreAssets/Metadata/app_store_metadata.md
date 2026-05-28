@@ -40,7 +40,7 @@ SOP,checklist,training,operations,workflow,safety,PDF,business,contractor,cleani
 
 ## Support URL
 
-https://github.com/lanray07/SOPForge-AI/issues
+https://lanray07.github.io/SOPForge-AI/support.html
 
 ## Marketing URL
 
@@ -48,7 +48,7 @@ https://github.com/lanray07/SOPForge-AI
 
 ## Privacy Policy URL
 
-https://github.com/lanray07/SOPForge-AI/blob/main/AppStoreAssets/Metadata/privacy_policy.md
+https://lanray07.github.io/SOPForge-AI/privacy.html
 
 ## App Review Notes
 

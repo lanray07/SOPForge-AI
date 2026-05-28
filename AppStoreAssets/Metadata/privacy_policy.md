@@ -36,4 +36,4 @@ AI-generated documents must be reviewed before use. SOPForge AI does not provide
 
 For support or privacy questions, use:
 
-https://github.com/lanray07/SOPForge-AI/issues
+https://lanray07.github.io/SOPForge-AI/support.html

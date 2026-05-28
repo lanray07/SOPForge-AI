@@ -23,6 +23,12 @@ struct PaywallView: View {
                         .premiumCard()
                 }
 
+                if let status = subscriptionStore.statusMessage {
+                    Label(status, systemImage: "info.circle")
+                        .foregroundStyle(SOPTheme.subtleText)
+                        .premiumCard()
+                }
+
                 planCard(.free)
                 planCard(.proMonthly)
                 planCard(.proYearly)
@@ -93,10 +99,10 @@ struct PaywallView: View {
                 Button {
                     Task { await buy(plan) }
                 } label: {
-                    Text("Choose \(plan.title)")
+                    Text(subscriptionStore.product(for: plan) == nil ? "Coming soon" : "Choose \(plan.title)")
                 }
                 .buttonStyle(PrimaryButtonStyle())
-                .disabled(subscriptionStore.isLoading)
+                .disabled(subscriptionStore.isLoading || subscriptionStore.product(for: plan) == nil)
             }
         }
         .premiumCard()
@@ -104,7 +110,7 @@ struct PaywallView: View {
 
     private func buy(_ plan: SubscriptionPlan) async {
         guard let product = subscriptionStore.product(for: plan) else {
-            subscriptionStore.errorMessage = "This StoreKit product is not available in the current configuration."
+            subscriptionStore.statusMessage = "The free plan is active. Paid plans are temporarily unavailable."
             return
         }
 

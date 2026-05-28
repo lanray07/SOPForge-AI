@@ -29,7 +29,7 @@ https://YOUR_BACKEND_URL.com/sopforge-ai
 
 ## Subscription Notes
 
-The paywall uses StoreKit 2 scaffolding and the included StoreKit configuration file during development. Product IDs:
+The paywall uses StoreKit 2 scaffolding and the included StoreKit configuration file during development. The free plan is usable without purchase. If paid App Store products are not available in the review environment, paid plan buttons are disabled and the app continues on the free plan without showing an error. Product IDs:
 
 - com.sopforgeai.pro.monthly
 - com.sopforgeai.pro.yearly
